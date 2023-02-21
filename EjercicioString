@@ -1,0 +1,25 @@
+/*EJERCICIO NOMBRE,PROFESION Y NACIONALIDAD
+ Ramirez Cortes*/
+ 
+import java.util.Scanner;
+
+public class Tarea2String {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("ESCRIBE TU NOMBRE, PROFESION Y PAIS");
+        String Informacion = teclado.nextLine();
+        String[] Separacion = Informacion.split(" ");
+        String NOMBRE = Separacion[0];
+        String may = NOMBRE.toUpperCase();
+        String PROFESION = Separacion[1];
+        String may0 = PROFESION.toUpperCase();
+        String PAIS = Separacion[2];
+        String may1 = PAIS.toUpperCase();
+        System.out.println("NOMBRE: " + may );
+        System.out.println("PROFESION: " + may0 );
+        System.out.println("PAIS: " + may1 );
+
+        /*Con esto quedaria resuelto el ejercio y obtendriamos un resultado favorable :)*/
+    }
+}
